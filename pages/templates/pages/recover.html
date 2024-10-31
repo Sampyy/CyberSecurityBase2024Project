@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="send/" method="POST">
+      {% csrf_token %}
+      <p>Where did you go to school?</p>
+      <input type="text" name="firstquestion" />
+      <p>What was your mothers maiden name?</p>
+      <input type="text" name="secondquestion" />
+      <p>What's the username of the user you want to recover?</p>
+      <input type="text" name="username" />
+      <p>What do you want your new password to be?</p>
+      <input type="password" name="password" />
+      <input type="submit" value="recover" />
+    </form>
+  </body>
+</html>

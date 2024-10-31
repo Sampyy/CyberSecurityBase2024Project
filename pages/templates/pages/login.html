@@ -1,0 +1,7 @@
+<h2>Login</h2>
+<a href="register/">Register</a href>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+<a href="/recover/">Recover account</a>
